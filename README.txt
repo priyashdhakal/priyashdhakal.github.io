@@ -1,2 +1,2 @@
-### priyashdhakal.com.np
+priyashdhakal.com.np
 
