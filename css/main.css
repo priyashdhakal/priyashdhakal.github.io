@@ -422,17 +422,25 @@ body.dark-mode #experience dl dt {
   50% { box-shadow: 0 0 0 12px rgba(14, 165, 164, 0); } }
 
 /* Floating, gently pulsing hero avatar */
+#intro .avatar {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 7px !important;
+  background: linear-gradient(135deg, #0ea5a4, #1e293b);
+  box-shadow: 0 16px 38px rgba(2, 6, 23, 0.45); }
+
 #intro .avatar img {
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 5px solid #fff;
   border-radius: 50%;
   animation: floaty 4.5s ease-in-out infinite, pulse-ring 2.8s ease-out infinite;
   transition: transform 0.4s ease; }
 
 @media (max-width: 575px) {
-  #intro .avatar img { width: 170px; height: 170px; } }
+  #intro .avatar img { width: 200px; height: 200px; } }
 
 #intro .avatar img:hover {
   transform: scale(1.06) rotate(2deg); }
@@ -532,16 +540,22 @@ body.dark-mode #portfolio h3 a {
 body.bg-light {
   background-color: #eef2f6;
   background-image:
+    url("../images/research-bg.svg"),
     radial-gradient(1200px circle at 50% -180px, rgba(14, 165, 164, 0.07), transparent 60%),
     linear-gradient(180deg, #f7f9fc 0%, #eaeef3 100%);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, center, center;
+  background-size: cover, cover, cover;
   background-attachment: fixed; }
 
 body.dark-mode {
   background-image:
-    radial-gradient(1200px circle at 50% -180px, rgba(14, 165, 164, 0.12), transparent 60%),
+    url("../images/research-bg.svg"),
+    radial-gradient(1200px circle at 50% -180px, rgba(14, 165, 164, 0.14), transparent 60%),
     linear-gradient(180deg, #0f1419 0%, #0c1116 100%);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, center, center;
+  background-size: cover, cover, cover;
   background-attachment: fixed; }
 
 /* White section cards lift gently on hover */
@@ -912,6 +926,9 @@ body.dark-mode .resume-container > .shadow-1-strong:not(#intro)::before {
 .nav-link[title="Facebook"]:hover { background-color: #1877f2; }
 .nav-link[title="Github"]:hover { background-color: #24292e; }
 .nav-link[title="Youtube"]:hover { background-color: #ff0000; }
+.nav-link[title="LinkedIn"]:hover { background-color: #0a66c2; }
+.nav-link[title="ResearchGate"]:hover { background-color: #00d0af; }
+.nav-link[title="Google Scholar"]:hover { background-color: #4285f4; }
 .nav-link[title="Instagram"]:hover {
   background: radial-gradient(circle at 30% 110%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
 

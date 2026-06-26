@@ -10,12 +10,15 @@ cv_url: https://drive.google.com/file/d/1EOcAZ1p4smzAYio-S-sYKqEmlc7_FLrN/view
 
 about:
   - >
-    Hello! My name is Priyash Dhakal, and I am thrilled to introduce myself as a PhD Research Fellow in the field of bioinformatics at
-    <strong><a href="https://www.jbnu.ac.kr/kor/" target="_blank">JBNU, (Jeonbuk National University)</a></strong>
-    in South Korea. As a passionate and dedicated individual, I have embarked on a journey to explore the fascinating intersection of biology, computer science, and data analysis.
+    I am a PhD Research Fellow in Bioinformatics at
+    <strong><a href="https://www.jbnu.ac.kr/kor/" target="_blank">JBNU (Jeonbuk National University)</a></strong>,
+    South Korea, working at the intersection of molecular biology, computer science, and data-driven modeling. My research centers on
+    developing machine-learning and deep-learning methods to interpret biological sequence data &mdash; most recently, ensemble approaches
+    for predicting miRNA&ndash;mRNA interactions.
   - >
-    I have completed my bachelor's degree in Computer Engineering in 2016. I believe in success through hard work &amp; dedication.
-    I am a progressive thinker &amp; respect each person's space &amp; values.
+    With a foundation in Computer Engineering (B.E., 2016) and prior experience across systems administration, networking, and software
+    development, I bring an engineering mindset to computational biology. I am committed to rigorous, reproducible research and to translating
+    algorithms into meaningful biological insight.
 
 facts:
   - { icon: "far fa-calendar-alt", label: "DOB", value: "8 Dec, 1992" }
@@ -23,5 +26,5 @@ facts:
   - { icon: "fas fa-phone", label: "Phone", value: "+82-010-7494-2845 <br> +977-9851212845" }
   - { icon: "fas fa-map-marker-alt", label: "Permanent Address", value: "Siranchowk Rural Municipality 07, Shree Nathkot, Gorkha, Nepal" }
   - { icon: "fas fa-map-marker-alt", label: "Current Address", value: "Jeonju Jeollabuk-do South Korea 54899" }
-  - { icon: "fa fa-cogs", label: "Skill", value: "Deep Learning, Python, Machine Learnig, Linux, Network" }
+  - { icon: "fa fa-cogs", label: "Skill", value: "Deep Learning, Python, Machine Learning, Linux, Networking" }
   - { icon: "fa-solid fa-language", label: "Language", value: "Nepali, English, Hindi, Korean" }

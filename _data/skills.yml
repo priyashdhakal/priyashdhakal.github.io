@@ -2,7 +2,7 @@
   icon: "fas fa-brain"
   level: "Master"
   percent: 95
-- name: "System and Network Admminstration (Linux, CCNA)"
+- name: "Systems &amp; Network Administration (Linux, CCNA)"
   icon: "fas fa-network-wired"
   level: "Expert"
   percent: 85

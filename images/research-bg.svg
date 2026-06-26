@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <!-- DNA double helix (left) -->
+  <g fill="none" stroke="#0ea5a4" stroke-width="2.4" stroke-linecap="round" opacity="0.22">
+    <path d="M150 60 C250 130 50 200 150 270 C250 340 50 410 150 480 C250 550 50 620 150 690 C250 760 50 830 150 900"/>
+    <path d="M150 60 C50 130 250 200 150 270 C50 340 250 410 150 480 C50 550 250 620 150 690 C50 760 250 830 150 900"/>
+    <line x1="95" y1="130" x2="205" y2="130"/>
+    <line x1="95" y1="200" x2="205" y2="200"/>
+    <line x1="95" y1="340" x2="205" y2="340"/>
+    <line x1="95" y1="410" x2="205" y2="410"/>
+    <line x1="95" y1="550" x2="205" y2="550"/>
+    <line x1="95" y1="620" x2="205" y2="620"/>
+    <line x1="95" y1="760" x2="205" y2="760"/>
+    <line x1="95" y1="830" x2="205" y2="830"/>
+  </g>
+
+  <!-- Neural network (top right) -->
+  <g opacity="0.20">
+    <g stroke="#6366f1" stroke-width="1.8">
+      <path d="M1060 120 L1200 90 M1060 120 L1200 220 M1060 120 L1200 320
+               M1060 240 L1200 90 M1060 240 L1200 220 M1060 240 L1200 320
+               M1200 90 L1330 160 M1200 220 L1330 160 M1200 220 L1330 280 M1200 320 L1330 280"/>
+    </g>
+    <g fill="#6366f1">
+      <circle cx="1060" cy="120" r="9"/><circle cx="1060" cy="240" r="9"/>
+      <circle cx="1200" cy="90" r="9"/><circle cx="1200" cy="220" r="9"/><circle cx="1200" cy="320" r="9"/>
+      <circle cx="1330" cy="160" r="9"/><circle cx="1330" cy="280" r="9"/>
+    </g>
+  </g>
+
+  <!-- Benzene / molecule cluster (center) -->
+  <g fill="none" stroke="#1e293b" stroke-width="2.2" opacity="0.14">
+    <path d="M690 280 L740 252 L790 280 L790 336 L740 364 L690 336 Z"/>
+    <path d="M790 280 L840 252 L890 280 L890 336 L840 364 L790 336"/>
+    <circle cx="740" cy="308" r="7" fill="#1e293b" stroke="none"/>
+    <circle cx="840" cy="308" r="7" fill="#1e293b" stroke="none"/>
+    <line x1="640" y1="308" x2="690" y2="308"/>
+    <line x1="890" y1="308" x2="940" y2="308"/>
+  </g>
+
+  <!-- Circuit traces (bottom left) -->
+  <g fill="none" stroke="#0ea5a4" stroke-width="2" opacity="0.18">
+    <path d="M120 720 H260 V650 H360 V760 H480"/>
+    <path d="M180 840 V760 M300 650 V580 H420"/>
+  </g>
+  <g fill="#0ea5a4" opacity="0.22">
+    <rect x="254" y="644" width="12" height="12" rx="2"/>
+    <rect x="354" y="754" width="12" height="12" rx="2"/>
+    <rect x="414" y="574" width="12" height="12" rx="2"/>
+    <circle cx="120" cy="720" r="5"/><circle cx="180" cy="840" r="5"/><circle cx="480" cy="760" r="5"/>
+  </g>
+
+  <!-- Brain-wave / signal (bottom right) -->
+  <g fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" opacity="0.18">
+    <path d="M940 720 H1010 L1040 640 L1075 800 L1110 690 L1140 740 H1360"/>
+  </g>
+
+  <!-- Sequence + binary motifs -->
+  <g fill="#0f766e" font-family="monospace" opacity="0.16">
+    <text x="520" y="120" font-size="30" letter-spacing="6">ATGC</text>
+    <text x="980" y="520" font-size="26" letter-spacing="6">GCTA</text>
+    <text x="300" y="470" font-size="24" letter-spacing="4">01101</text>
+    <text x="1180" y="640" font-size="24" letter-spacing="4">1011</text>
+  </g>
+
+  <!-- scattered data points -->
+  <g fill="#1e293b" opacity="0.10">
+    <circle cx="560" cy="560" r="4"/><circle cx="620" cy="600" r="4"/><circle cx="600" cy="520" r="4"/>
+    <circle cx="980" cy="760" r="4"/><circle cx="1040" cy="800" r="4"/>
+    <circle cx="700" cy="700" r="4"/><circle cx="760" cy="660" r="4"/>
+  </g>
+</svg>
