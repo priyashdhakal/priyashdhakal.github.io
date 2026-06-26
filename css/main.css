@@ -534,6 +534,17 @@ body.dark-mode #portfolio h3 a {
 .about-section .col-sm-5:hover i {
   transform: translateX(3px); }
 
+/* Justified, hyphenated prose for a clean academic look */
+.about-section .col-md-6 p,
+.pub-abstract,
+.blog-content p,
+.reference-section .lead {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 /* ============================================================
  * Background theme
  * ============================================================ */
