@@ -1,0 +1,15 @@
+- name: "Kil To Chong"
+  title: "Professor at JBNU"
+  image: /images/KTC.png
+  quote: >
+    <a href="https://scholar.google.com/citations?user=vcBoPWUAAAAJ&hl=ko" target="_blank">Professor Kil To Chong</a> is a dedicated researcher merging
+    artificial intelligence and brain science to tackle brain diseases, particularly Alzheimer's. His notable academic contributions aim to enhance human well-being
+    by identifying genes and mechanisms responsible for Alzheimer's and developing novel drugs. He's also engaged in AI-driven studies related to cancer-causing genes.
+
+- name: "Hilal Tayar"
+  title: "Assistant Professor at JBNU"
+  image: /images/HT.jpg
+  quote: >
+    Experienced Researcher with a demonstrated history of working in the higher education industry.
+    Skilled in Research, Matlab, Computer Vision, C, and C++. Strong research professional with a Master of Engineering (M.Eng.) focused in Information and
+    Electronics Engineering from Chonbuk National University.

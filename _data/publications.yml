@@ -1,0 +1,19 @@
+- title: "An ensemble of stacking classifiers for improved prediction of miRNA-mRNA interactions"
+  url: "https://www.sciencedirect.com/science/article/pii/S0010482523007072?dgcid=coauthor"
+  image: /images/cts.jpg
+  field: "Bioinformatics"
+  method: "Ensemble Stacking Classifier"
+  task: "miRNA-mRNA Interaction Prediction"
+  abstract: >
+    MicroRNAs (miRNAs) are small non-coding RNA molecules that play a crucial role in regulating gene expression at the post-transcriptional
+    level by binding to potential target sites of messenger RNAs (mRNAs), facilitated by the Argonaute family of proteins. Selecting the conservative candidate
+    target sites (CTS) is a challenging step, considering that most of the existing computational algorithms primarily focus on canonical site types, which is a
+    time-consuming and inefficient utilization of miRNA target site interactions.We developed a stacking classifier algorithm that addresses the CTS selection criteria
+    using feature-encoding techniques that generates feature vectors, including k-mer nucleotide composition, dinucleotide composition, pseudo-nucleotide composition, and
+    sequence order coupling.
+  tags:
+    - Bioinformatics
+    - miRNA-mRNA Interaction
+    - Machine Learning
+    - Stacking Classifier
+    - Feature Encoding

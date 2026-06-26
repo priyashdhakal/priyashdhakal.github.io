@@ -1,0 +1,6 @@
+- { icon: "fas fa-dna", label: "Bioinformatics" }
+- { icon: "fas fa-brain", label: "Machine &amp; Deep Learning" }
+- { icon: "fas fa-laptop-code", label: "Computational Biology" }
+- { icon: "fas fa-stream", label: "Genomic Sequence Analysis" }
+- { icon: "fas fa-network-wired", label: "Neural Networks" }
+- { icon: "fas fa-chart-line", label: "AI Data Analytics" }

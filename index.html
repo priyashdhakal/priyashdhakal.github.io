@@ -1,3 +1,7 @@
+---
+# This page is generated from the files in /_data/*.yml
+# Edit those YAML files (on GitHub) to update your content — no HTML needed.
+---
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -34,8 +38,8 @@
           <h1 class="site-title mb-0" style="font-size: 50px;"><a href="https://priyashdhakal.com.np/">
             P<span style="color:#E04343;" >ri<span style="color:#3b3bca;">ya</span>sh
             D<span>h<span style="color:#00c3ff">ak<span style="color:#27bf3e;">a</span>l</span>
-          </a></h1> 
-          <div class="site-nav"> 
+          </a></h1>
+          <div class="site-nav">
             <nav role="navigation">
               <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
@@ -65,14 +69,14 @@
 <div class="resume-container">
   <div class="shadow-1-strong bg-white my-5" id="intro">
     <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/BB.jpg"/>
+      <div class="cover bg-image"><img src="{{ site.data.profile.cover }}"/>
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(0.5px);">
           <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/header-bg.jpg" width="200" height="200"/></div>
+            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="{{ site.data.profile.avatar }}" width="200" height="200"/></div>
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Priyash Dhakal</h2>
-                <p class="lead mb-0"><span id="typed-roles" data-roles='["Computer Engineer","PhD Research Fellow","AI Engineer","Bioinformatician"]'>Computer Engineer, PhD Fellow, AI Engineer, Bioinfomatician</span></p>
+                <h2 class="h1">{{ site.data.profile.name }}</h2>
+                <p class="lead mb-0"><span id="typed-roles" data-roles='{{ site.data.profile.roles | jsonify }}'>{{ site.data.profile.roles | join: ", " }}</span></p>
               </div>
               <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
                 <nav role="navigation">
@@ -88,7 +92,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="https://drive.google.com/file/d/1EOcAZ1p4smzAYio-S-sYKqEmlc7_FLrN/view" target="_blank" data-aos="fade-right" data-aos-delay="700">Download CV</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
+              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="{{ site.data.profile.cv_url }}" target="_blank" data-aos="fade-right" data-aos-delay="700">Download CV</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
             </div>
           </div>
         </div>
@@ -100,59 +104,20 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="h2 fw-light mb-4"><i class="fas fa-user section-icon"></i>About Me</h2>
-          <p>Hello! My name is Priyash Dhakal, and I am thrilled to introduce myself as a PhD Research Fellow in the field of bioinformatics at
-            <strong><a href="https://www.jbnu.ac.kr/kor/" target="_blank">JBNU, (Jeonbuk National University)</a></strong> 
-            in South Korea. As a passionate and dedicated individual, I have embarked on a journey to explore the fascinating intersection of biology, computer science, and data 
-            analysis.</p>
-          <p>I have completed my bachelor's degree in Computer Engineering in 2016. I believe in success through hard work & dedication. 
-            I am a progressive thinker & respect each person's space & values.</p>
+          {% for para in site.data.profile.about %}<p>{{ para }}</p>
+          {% endfor %}
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
             <h2 class="h2 fw-light mb-4"><i class="fas fa-id-card section-icon"></i>Quick Facts</h2>
+            {% for fact in site.data.profile.facts %}
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> DOB</div>
+              <div class="pb-2 fw-bolder"><i class="{{ fact.icon }} pe-2 text-muted" style="width:24px;opacity:0.85;"></i> {{ fact.label }}</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">8 Dec, 1992</div>
+              <div class="pb-2">{{ fact.value }}</div>
             </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">priyashdhakal@jbnu.ac.kr</div>
-            </div>
-            
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">+82-010-7494-2845 <br> +977-9851212845</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Permanent Address</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Siranchowk Rural Municipality 07, Shree Nathkot, Gorkha, Nepal</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i>Current Address</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Jeonju Jeollabuk-do South Korea 54899</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fa fa-cogs" style="width:24px;opacity:0.85;"></i>Skill</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Deep Learning, Python, Machine Learnig, Linux, Network</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fa-solid fa-language" style="width:24px;opacity:0.85;"></i>Language</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Nepali, English, Hindi, Korean</div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -162,50 +127,19 @@
     <div class="skills-section">
       <h2 class="h2 fw-light mb-4"><i class="fas fa-laptop-code section-icon"></i>Technical Expertise</h2>
       <div class="row g-4">
+        {% for skill in site.data.skills %}
         <div class="col-lg-6">
           <div class="skill-item">
             <div class="skill-head">
-              <span class="skill-name"><i class="fas fa-brain"></i>Artificial Intelligence (Deep Learning, Machine Learning)</span>
-              <span class="skill-meta"><span class="skill-level">Master</span><span class="skill-pct">0%</span></span>
+              <span class="skill-name"><i class="{{ skill.icon }}"></i>{{ skill.name }}</span>
+              <span class="skill-meta"><span class="skill-level">{{ skill.level }}</span><span class="skill-pct">0%</span></span>
             </div>
             <div class="progress skill-track" style="height: 8px">
-              <div class="progress-bar" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" data-aos="zoom-in-right" data-aos-delay="{{ forloop.index | times: 100 }}" data-aos-anchor=".skills-section" style="width: {{ skill.percent }}%;" aria-valuenow="{{ skill.percent }}" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="skill-item">
-            <div class="skill-head">
-              <span class="skill-name"><i class="fas fa-network-wired"></i>System and Network Admminstration (Linux, CCNA)</span>
-              <span class="skill-meta"><span class="skill-level">Expert</span><span class="skill-pct">0%</span></span>
-            </div>
-            <div class="progress skill-track" style="height: 8px">
-              <div class="progress-bar" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="skill-item">
-            <div class="skill-head">
-              <span class="skill-name"><i class="fas fa-layer-group"></i>PyTorch, TensorFlow, Keras</span>
-              <span class="skill-meta"><span class="skill-level">Advance</span><span class="skill-pct">0%</span></span>
-            </div>
-            <div class="progress skill-track" style="height: 8px">
-              <div class="progress-bar" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="skill-item">
-            <div class="skill-head">
-              <span class="skill-name"><i class="fas fa-chart-line"></i>AI Data Analytics</span>
-              <span class="skill-meta"><span class="skill-level">Advance</span><span class="skill-pct">0%</span></span>
-            </div>
-            <div class="progress skill-track" style="height: 8px">
-              <div class="progress-bar" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -213,82 +147,22 @@
     <div class="work-experience-section">
       <h2 class="h2 fw-light mb-4"><i class="fas fa-briefcase section-icon"></i>Professional Experience</h2>
       <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+        {% for job in site.data.experience %}
+        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="{{ forloop.index0 | times: 200 }}">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-briefcase-medical role-icon"></i>IT Officer <span class="text-muted h6">at Sajha Swasthya Sewa</span></div>
+            <div class="h5"><i class="{{ job.icon }} role-icon"></i>{{ job.role }} <span class="text-muted h6">at {{ job.org }}</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>Aug, 2019 - Oct, 2020</span></div>
+            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>{{ job.date }}</span></div>
             <div>
               <dl>
-                <dt>➢Implement MIS and POS system to the pharmaceutical stores.</dt>
-                <dt>➢Monitoring an evaluating the pharmaceutical products </dt>
-                <dt>➢Planning and projection of various raw materials and consumables requirement of the department.</dt>
-                <dt>➢Develop performance plans and objectives that align with the strategic objectives and plan.</dt><dt>➢Testing the product in controlled, real situations before going live.</dt>
-                <dt>➢Preparation of training manuals of MIS and POS system to the respective stakeholdes.</dt>
-                </dl>
+                {% for point in job.points %}<dt>➢{{ point }}</dt>
+                {% endfor %}
+              </dl>
             </div>
           </div>
         </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-landmark role-icon"></i>IT Officer <span class="text-muted h6">at Siranchowk Rural Municipality</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>Jan, 2018 - Jun, 2019</span></div>
-            <div> 
-              <dl>
-                <dt>➢Implement e-governance and good governance plans by playing role as leading, advising and coordinating.</dt>
-                <dt>➢Provide IT access to all specifically to the digitally deprived village people (to minimize digital divide and share IT benefits)</dt>
-                <dt>➢Make IT law, plan and policy to regulate IT by imposing standards codes and national portal for information
-                  sharing/exchanging/ info integration.</dt>
-                <dt>➢Monitoring evaluation of e-government automation activities to improve efficiency and effectiveness in the
-                  delivery of services.</dt>
-                <dt>➢Create environment to promote private sector/ partnership (maximize participation).</dt>
-                <dt>➢Secure the digital information by promoting cheap cost-effective best technology for sustainable development.</dt>
-                </dl>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-code role-icon"></i>Web/Software Developer <span class="text-muted h6">at Vizrambha InfoTech</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>Jul, 2016 - Dec, 2017</span></div>
-            <div>
-              <dl>
-                <dt>➢Reviewing current systems.</dt>
-                <dt>➢Presenting ideas for system improvements, including cost proposals.</dt>
-                <dt>➢Working closely with analysts, designers and staff.</dt>
-                <dt>➢Producing detailed specifications and writing the program codes.</dt>
-                <dt>➢Testing the product in controlled, real situations before going live.</dt>
-                <dt>➢Preparation of training manuals for users.</dt>
-                <dt>➢Maintaining the systems once they are up and running.</dt>
-                </dl>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="600">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-server role-icon"></i>Junior System Admin <span class="text-muted h6">at Chitrawan Unique Net</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>Feb, 2015 - jun, 2016</span></div>
-            <div>
-              <dl>
-                <dt>➢Install and configure software and hardware.</dt>
-                <dt>➢Manage network servers and technology tools.</dt>
-                <dt>➢Set up accounts and workstations.</dt>
-                <dt>➢Monitor performance and maintain systems according to requirements.</dt>
-                <dt>➢Troubleshoot issues and outages.</dt>
-                <dt>➢Ensure security through access controls, backups and firewalls.</dt>
-                <dt>➢Upgrade systems with new releases and models.</dt>
-                <dt>➢Build an internal wiki with technical documentation, manuals and IT policies</dt>
-                </dl>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -296,87 +170,51 @@
     <div class="education-section">
       <h2 class="h2 fw-light mb-4"><i class="fas fa-graduation-cap section-icon"></i>Academic Background</h2>
       <div class="timeline">
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
+        {% for edu in site.data.education %}
+        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="{{ forloop.index0 | times: 200 }}">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-school role-icon"></i>School Leaving Certificate (SLC) <span class="text-muted h6">from SOS Herman Gmeiner School Bharatpu, Chitwan, Nepal</span>          </div>
+            <div class="h5"><i class="{{ edu.icon }} role-icon"></i>{{ edu.degree }} <span class="text-muted h6">from {{ edu.org }}</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>2008</span></div>
-            <div><a href="https://soshgsbharatpur.edu.np/" target="_blank">SOS Herman Gmeiner School Bharatpu, Chitwan, Nepal</a></div>
+            <div class="mb-3"><span class="exp-date{% if edu.current %} exp-date-current{% endif %}"><i class="{% if edu.current %}fas fa-circle-notch fa-spin{% else %}far fa-calendar-alt{% endif %}"></i>{{ edu.date }}</span></div>
+            <div><a href="{{ edu.link }}" target="_blank">{{ edu.link_text }}</a></div>
           </div>
         </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-atom role-icon"></i>Higher Secondary Education Board (HSEB) in Science <span class="text-muted h6">from Nepal Police Higher Secondary School Sanga, Kavre, Nepal</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>2008 - 2011</span></div>
-            <div><a href="https://www.nps.edu.np/" target="_blank">Nepal Police Higher Secondary School Sanga, Kavre, Nepal.</a></div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-laptop-code role-icon"></i>Bachelor in Computer Engineering <span class="text-muted h6">from Kathmandu Engineering College, Kalimati,Kathmandu, Nepal</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date"><i class="far fa-calendar-alt"></i>2011 - 2016</span></div>
-            <div><a href="https://www.kecktm.edu.np/" target="_blank">Kathmandu Engineering College, Kalimati,Kathmandu, Nepal.</a></div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5"><i class="fas fa-dna role-icon"></i>Intregrated PhD(Bioinformatics) <span class="text-muted h6">from Jeonbuk National University Jeollabuk-do, Jeonju, South Korea</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="mb-3"><span class="exp-date exp-date-current"><i class="fas fa-circle-notch fa-spin"></i>2022 - Present</span></div>
-            <div><a href="https://www.jbnu.ac.kr/" target="_blank">Jeonbuk National University Jeollabuk-do, Jeonju, South Korea.</a></div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio" data-aos="fade-up" data-aos-duration="800">
     <div class="portfolio-section">
       <h2 class="h2 fw-light mb-4"><i class="fas fa-flask section-icon"></i>Research &amp; Publications</h2>
-      <div class="row g-0 pub-card" data-aos="fade-up" data-aos-delay="100">
+      {% for pub in site.data.publications %}
+      <div class="row g-0 pub-card mb-4" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-4">
-          <a class="pub-thumb" href="https://www.sciencedirect.com/science/article/pii/S0010482523007072?dgcid=coauthor" target="_blank"><img src="images/cts.jpg" alt="miRNA-mRNA interaction prediction"/></a>
+          <a class="pub-thumb" href="{{ pub.url }}" target="_blank"><img src="{{ pub.image }}" alt="{{ pub.title }}"/></a>
         </div>
         <div class="col-lg-8 d-flex">
           <div class="pub-body">
             <span class="pub-eyebrow"><i class="fas fa-award"></i>Peer-Reviewed Publication</span>
-            <h3 class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S0010482523007072?dgcid=coauthor" target="_blank">An ensemble of stacking classifiers for improved prediction of miRNA-mRNA interactions</a></h3>
-            <p class="pub-abstract text-muted">MicroRNAs (miRNAs) are small non-coding RNA molecules that play a crucial role in regulating gene expression at the post-transcriptional
-              level by binding to potential target sites of messenger RNAs (mRNAs), facilitated by the Argonaute family of proteins. Selecting the conservative candidate
-              target sites (CTS) is a challenging step, considering that most of the existing computational algorithms primarily focus on canonical site types, which is a
-              time-consuming and inefficient utilization of miRNA target site interactions.We developed a stacking classifier algorithm that addresses the CTS selection criteria
-              using feature-encoding techniques that generates feature vectors, including k-mer nucleotide composition, dinucleotide composition, pseudo-nucleotide composition, and
-              sequence order coupling.</p>
+            <h3 class="pub-title"><a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a></h3>
+            <p class="pub-abstract text-muted">{{ pub.abstract }}</p>
             <div class="pub-info">
-              <span class="pub-info-item"><i class="fas fa-microscope"></i>Field: <strong>Bioinformatics</strong></span>
-              <span class="pub-info-item"><i class="fas fa-project-diagram"></i>Method: <strong>Ensemble Stacking Classifier</strong></span>
-              <span class="pub-info-item"><i class="fas fa-dna"></i>Task: <strong>miRNA-mRNA Interaction Prediction</strong></span>
+              <span class="pub-info-item"><i class="fas fa-microscope"></i>Field: <strong>{{ pub.field }}</strong></span>
+              <span class="pub-info-item"><i class="fas fa-project-diagram"></i>Method: <strong>{{ pub.method }}</strong></span>
+              <span class="pub-info-item"><i class="fas fa-dna"></i>Task: <strong>{{ pub.task }}</strong></span>
             </div>
             <div class="pub-tags">
-              <span class="pub-tag">Bioinformatics</span>
-              <span class="pub-tag">miRNA-mRNA Interaction</span>
-              <span class="pub-tag">Machine Learning</span>
-              <span class="pub-tag">Stacking Classifier</span>
-              <span class="pub-tag">Feature Encoding</span>
+              {% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}
             </div>
-            <a class="btn btn-info btn-sm pub-btn" href="https://www.sciencedirect.com/science/article/pii/S0010482523007072?dgcid=coauthor" target="_blank">Read Full Paper <i class="fas fa-arrow-right ms-1"></i></a>
+            <a class="btn btn-info btn-sm pub-btn" href="{{ pub.url }}" target="_blank">Read Full Paper <i class="fas fa-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>
+      {% endfor %}
       <div class="research-interests" data-aos="fade-up" data-aos-delay="150">
         <h3 class="ri-title"><i class="fas fa-atom"></i>Research Interests</h3>
         <div class="ri-chips">
-          <span class="ri-chip"><i class="fas fa-dna"></i>Bioinformatics</span>
-          <span class="ri-chip"><i class="fas fa-brain"></i>Machine &amp; Deep Learning</span>
-          <span class="ri-chip"><i class="fas fa-laptop-code"></i>Computational Biology</span>
-          <span class="ri-chip"><i class="fas fa-stream"></i>Genomic Sequence Analysis</span>
-          <span class="ri-chip"><i class="fas fa-network-wired"></i>Neural Networks</span>
-          <span class="ri-chip"><i class="fas fa-chart-line"></i>AI Data Analytics</span>
+          {% for interest in site.data.interests %}<span class="ri-chip"><i class="{{ interest.icon }}"></i>{{ interest.label }}</span>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -384,35 +222,21 @@
   <div class="shadow-1-strong bg-white my-5 p-5" id="references" data-aos="fade-up" data-aos-duration="800">
     <div class="reference-section">
       <h2 class="h2 fw-light mb-4"><i class="fas fa-user-friends section-icon"></i>References</h2>
-      <div class="row"> 
+      <div class="row">
+        {% for ref in site.data.references %}
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/KTC.png" width="80" height="80"/></div>
+            <div class="avatar"><img src="{{ ref.image }}" width="80" height="80"/></div>
             <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Kil To Chong</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Professor at JBNU</p>
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">{{ ref.name }}</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">{{ ref.title }}</p>
             </div>
           </div>
           <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100"><a href="https://scholar.google.com/citations?user=vcBoPWUAAAAJ&hl=ko" target="_blank">Professor Kil To Chong</a>  is a dedicated researcher merging
-               artificial intelligence and brain science to tackle brain diseases, particularly Alzheimer's. His notable academic contributions aim to enhance human well-being
-                by identifying genes and mechanisms responsible for Alzheimer's and developing novel drugs. He's also engaged in AI-driven studies related to cancer-causing genes.</p>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">{{ ref.quote }}</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/HT.jpg" width="80" height="80"/></div>
-            <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Hilal Tayar</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Assistant Professor at JBNU</p>
-            </div>
-          </div>
-          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Experienced Researcher with a demonstrated history of working in the higher education industry. 
-              Skilled in Research, Matlab, Computer Vision, C, and C++. Strong research professional with a Master of Engineering (M.Eng.) focused in Information and 
-              Electronics Engineering from Chonbuk National University.</p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

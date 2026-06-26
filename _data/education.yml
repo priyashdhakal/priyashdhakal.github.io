@@ -1,0 +1,31 @@
+- degree: "School Leaving Certificate (SLC)"
+  org: "SOS Herman Gmeiner School Bharatpu, Chitwan, Nepal"
+  icon: "fas fa-school"
+  date: "2008"
+  link: "https://soshgsbharatpur.edu.np/"
+  link_text: "SOS Herman Gmeiner School Bharatpu, Chitwan, Nepal"
+  current: false
+
+- degree: "Higher Secondary Education Board (HSEB) in Science"
+  org: "Nepal Police Higher Secondary School Sanga, Kavre, Nepal"
+  icon: "fas fa-atom"
+  date: "2008 - 2011"
+  link: "https://www.nps.edu.np/"
+  link_text: "Nepal Police Higher Secondary School Sanga, Kavre, Nepal."
+  current: false
+
+- degree: "Bachelor in Computer Engineering"
+  org: "Kathmandu Engineering College, Kalimati,Kathmandu, Nepal"
+  icon: "fas fa-laptop-code"
+  date: "2011 - 2016"
+  link: "https://www.kecktm.edu.np/"
+  link_text: "Kathmandu Engineering College, Kalimati,Kathmandu, Nepal."
+  current: false
+
+- degree: "Intregrated PhD(Bioinformatics)"
+  org: "Jeonbuk National University Jeollabuk-do, Jeonju, South Korea"
+  icon: "fas fa-dna"
+  date: "2022 - Present"
+  link: "https://www.jbnu.ac.kr/"
+  link_text: "Jeonbuk National University Jeollabuk-do, Jeonju, South Korea."
+  current: true

@@ -1,0 +1,16 @@
+- name: "Artificial Intelligence (Deep Learning, Machine Learning)"
+  icon: "fas fa-brain"
+  level: "Master"
+  percent: 95
+- name: "System and Network Admminstration (Linux, CCNA)"
+  icon: "fas fa-network-wired"
+  level: "Expert"
+  percent: 85
+- name: "PyTorch, TensorFlow, Keras"
+  icon: "fas fa-layer-group"
+  level: "Advance"
+  percent: 75
+- name: "AI Data Analytics"
+  icon: "fas fa-chart-line"
+  level: "Advance"
+  percent: 75
