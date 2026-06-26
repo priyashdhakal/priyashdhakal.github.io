@@ -10,12 +10,9 @@ cv_url: https://drive.google.com/file/d/1EOcAZ1p4smzAYio-S-sYKqEmlc7_FLrN/view
 
 about:
   - >
-    I am a PhD Research Fellow in Bioinformatics at
-    <strong><a href="https://www.jbnu.ac.kr/kor/" target="_blank">JBNU (Jeonbuk National University)</a></strong>,
-    South Korea, working at the interface of molecular biology, computer science, and statistical learning. I design and apply
-    machine-learning and deep-learning models to decode high-dimensional biological sequence data &mdash; for example, ensemble
-    (stacking) classifiers that improve the prediction of miRNA&ndash;mRNA interactions from k-mer, dinucleotide, and pseudo-nucleotide
-    composition and sequence-order features.
+    I am a PhD Research Fellow in Bioinformatics at <strong><a href="https://www.jbnu.ac.kr/kor/" target="_blank">Jeonbuk National University (JBNU)</a></strong>,
+    South Korea, working at the intersection of molecular biology, computer science, and statistical learning. My research develops machine- and 
+    deep-learning models to decode high-dimensional biological sequence data and to uncover functional patterns in genomic and transcriptomic interactions.
   - >
     My path began in Computer Engineering (B.E., 2016), followed by hands-on roles in systems administration, networking, and full-stack
     software development. That engineering foundation shapes how I approach computational biology: building reproducible pipelines,
