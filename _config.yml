@@ -1,0 +1,23 @@
+title: Priyash Dhakal
+description: Researcher · PhD Fellow · AI & Bioinformatics
+url: "https://priyashdhakal.com.np"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title/
+future: true
+
+# Make posts available and set sane defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Keep the static homepage and large vendor assets out of Jekyll processing noise
+exclude:
+  - README.txt
+  - LICENSE-free.txt
+  - "*.map"

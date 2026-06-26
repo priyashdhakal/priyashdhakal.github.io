@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}, Researcher{% endif %}</title>
+    <link href="{{ '/images/favicon.ico' | relative_url }}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Montserrat:wght@600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link href="{{ '/css/font-awesome/css/all.min.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
+    <link href="{{ '/css/mdb.min.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
+    <link href="{{ '/css/aos.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
+    <link href="{{ '/css/main.css' | relative_url }}?ver=20260626" rel="stylesheet">
+  </head>
+  <body class="bg-light" id="top">
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="pt-4 clearfix">
+          <h1 class="site-title mb-0" style="font-size: 50px;"><a href="{{ '/' | relative_url }}">
+            P<span style="color:#E04343;">ri<span style="color:#3b3bca;">ya</span>sh
+            D<span>h<span style="color:#00c3ff">ak<span style="color:#27bf3e;">a</span>l</span>
+          </a></h1>
+          <div class="site-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="{{ '/#about' | relative_url }}"><span class="menu-title">About</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/#skills' | relative_url }}"><span class="menu-title">Skills</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/#experience' | relative_url }}"><span class="menu-title">Experience</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/#education' | relative_url }}"><span class="menu-title">Education</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/#portfolio' | relative_url }}"><span class="menu-title">Research</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/blog/' | relative_url }}"><span class="menu-title">Blog</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/#contact' | relative_url }}"><span class="menu-title">Contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+      <div class="container">
+        <div class="my-3">
+          <div class="h4">Priyash Dhakal</div>
+          <div class="footer-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="https://twitter.com/priyashdhakal" target="_blank" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/priyash.dhakal" target="_blank" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/priyashdhakal" target="_blank" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/priyashdhakal" target="_blank" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fab-stack d-print-none">
+      <button id="theme-toggle" class="fab-btn" type="button" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <button id="back-to-top" class="fab-btn" type="button" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <script src="{{ '/scripts/mdb.min.js' | relative_url }}?ver=1.2.1"></script>
+    <script src="{{ '/scripts/aos.js' | relative_url }}?ver=1.2.1"></script>
+    <script src="{{ '/scripts/main.js' | relative_url }}?ver=20260626"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="shadow-1-strong bg-white my-5 p-5" id="blog-post" data-aos="fade-up" data-aos-duration="800">
+  <article class="blog-article">
+    <a class="blog-back" href="{{ '/blog/' | relative_url }}"><i class="fas fa-arrow-left"></i> All posts</a>
+    <h1 class="blog-post-title">{{ page.title }}</h1>
+    <div class="blog-post-meta">
+      <span><i class="far fa-calendar-alt"></i> {{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.tags and page.tags.size > 0 %}
+      <span class="blog-post-tags">
+        {% for tag in page.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}
+      </span>
+      {% endif %}
+    </div>
+    {% if page.image %}
+    <img class="blog-post-cover" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    {% endif %}
+    <div class="blog-content">
+      {{ content }}
+    </div>
+  </article>
+</div>
