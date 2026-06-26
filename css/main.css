@@ -914,6 +914,9 @@ body.dark-mode .resume-container > .shadow-1-strong:not(#intro)::before {
 .footer-nav .nav-link {
   border: 1px solid rgba(30, 41, 59, 0.15); }
 
+.header-social .nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.4); }
+
 .header-social .nav-link:hover,
 .footer-nav .nav-link:hover {
   color: #fff !important;
