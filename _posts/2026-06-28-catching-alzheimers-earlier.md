@@ -4,6 +4,7 @@ title: "Catching Alzheimer's Earlier: Pairing Brain Scans With a Blood Test"
 date: 2026-06-28 12:00:00 +0900
 permalink: /blog/catching-alzheimers-earlier/
 tags: [Alzheimer's, Multimodal AI, Deep Learning, Explainable AI, Neuroimaging]
+image: /images/blogpost.jpg
 ---
 
 Alzheimer's disease is easiest to fight early — and hardest to catch early. By the time memory problems are obvious to a family or a clinic, the disease has usually been quietly at work in the brain for years. The most valuable window opens earlier, at a stage called **mild cognitive impairment (MCI)**, when intervention might still change the course of the illness. The catch is that telling early MCI apart from ordinary aging is one of the toughest open problems in computer-aided diagnosis.

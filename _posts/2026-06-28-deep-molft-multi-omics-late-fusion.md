@@ -4,10 +4,14 @@ title: "Reading Disease in Layers: Multi-Omics AI That Explains Itself"
 date: 2026-06-28 10:00:00 +0900
 permalink: /blog/reading-disease-in-layers/
 tags: [Bioinformatics, Deep Learning, Multi-Omics, Explainable AI]
-image: /images/deep-molft-graphical-abstract.png
+image: /images/blogpost.jpg
 ---
 
 Every disease leaves its mark in more than one place. A tumor doesn't just rewrite a cell's genes — it reshapes how those genes are switched on and off, which molecular messages the cell sends, and which it quietly silences. Each of these layers tells part of the story. None of them tells all of it.
+
+![Deep MOLFT graphical abstract](/images/deep-molft-graphical-abstract.png)
+{:.blog-figure}
+*Deep MOLFT processes each molecular layer through its own network before fusing them, then explains its predictions with SHAP.*
 
 That is the central challenge of modern biomedical data. We can now measure these molecular layers — DNA methylation, microRNA activity, messenger RNA expression — in extraordinary detail. Reading them *together*, though, is far harder than reading any one of them alone. A framework I have been building, **Deep MOLFT**, takes a fresh approach to that problem, and adds something most AI models in this space still lack: the ability to explain its own conclusions.
 
