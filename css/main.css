@@ -90,17 +90,17 @@
   margin-bottom: 1.5rem; }
 
 .blog-post-cover {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 1.75rem; }
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.75rem;
+  border-radius: 14px; }
 
 .blog-content {
-  font-size: 1.02rem;
-  line-height: 1.8;
-  color: #334155;
-  max-width: 760px; }
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #334155; }
 
 .blog-content h2 { font-size: 1.5rem; margin: 2rem 0 0.75rem; color: var(--site-navy); }
 .blog-content h3 { font-size: 1.25rem; margin: 1.5rem 0 0.6rem; color: var(--site-navy); }
