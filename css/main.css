@@ -92,15 +92,25 @@
 .blog-post-cover {
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: min(100%, 760px);
+  max-height: 460px;
   height: auto;
   margin: 0 auto 1.75rem;
-  border-radius: 14px; }
+  padding: 0.6rem;
+  background-color: #fff;
+  border: 1px solid rgba(30, 41, 59, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(30, 41, 59, 0.10); }
+
+body.dark-mode .blog-post-cover {
+  background-color: #11161d;
+  border-color: rgba(255, 255, 255, 0.10); }
 
 .blog-content {
   font-size: 1.05rem;
   line-height: 1.85;
-  color: #334155; }
+  color: #334155;
+  max-width: 860px; }
 
 .blog-content h2 { font-size: 1.5rem; margin: 2rem 0 0.75rem; color: var(--site-navy); }
 .blog-content h3 { font-size: 1.25rem; margin: 1.5rem 0 0.6rem; color: var(--site-navy); }
@@ -661,6 +671,9 @@ body.dark-mode {
 #contact {
   --accent: #0369a1;
   background-image: radial-gradient(1000px circle at 0% 0%, rgba(3, 105, 161, 0.07), transparent 52%); }
+#blog-preview {
+  --accent: #0f766e;
+  background-image: radial-gradient(1000px circle at 0% 0%, rgba(15, 118, 110, 0.07), transparent 52%); }
 
 body.dark-mode #about,
 body.dark-mode #skills,
@@ -668,7 +681,8 @@ body.dark-mode #experience,
 body.dark-mode #education,
 body.dark-mode #portfolio,
 body.dark-mode #references,
-body.dark-mode #contact {
+body.dark-mode #contact,
+body.dark-mode #blog-preview {
   background-blend-mode: screen; }
 
 /* Tie the heading icon, role icon and underline to the section accent */
