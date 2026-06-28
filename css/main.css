@@ -129,6 +129,42 @@
   color: #475569;
   font-style: italic; }
 
+/* Tables in articles */
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: 0.88rem;
+  display: block;
+  overflow-x: auto; }
+.blog-content th,
+.blog-content td {
+  border: 1px solid rgba(30, 41, 59, 0.15);
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+  white-space: nowrap; }
+.blog-content thead th {
+  background-color: var(--accent, #0f766e);
+  color: #fff;
+  font-weight: 600; }
+.blog-content tbody tr:nth-child(even) { background-color: rgba(30, 41, 59, 0.035); }
+
+/* Long display equations scroll instead of overflowing on mobile */
+.blog-content .MathJax_Display,
+.blog-content mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+
+.blog-figure-caption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+  font-style: italic; }
+
+body.dark-mode .blog-content th,
+body.dark-mode .blog-content td { border-color: rgba(255, 255, 255, 0.12); }
+body.dark-mode .blog-content tbody tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.04); }
+
 body.dark-mode .blog-card { background-color: #11161d; border-color: rgba(255, 255, 255, 0.08); }
 body.dark-mode .blog-card-title,
 body.dark-mode .blog-post-title { color: #e2e8f0; }

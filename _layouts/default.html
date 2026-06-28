@@ -11,7 +11,7 @@
     <link href="{{ '/css/font-awesome/css/all.min.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
     <link href="{{ '/css/mdb.min.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
     <link href="{{ '/css/aos.css' | relative_url }}?ver=1.2.1" rel="stylesheet">
-    <link href="{{ '/css/main.css' | relative_url }}?ver=20260627" rel="stylesheet">
+    <link href="{{ '/css/main.css' | relative_url }}?ver=20260629" rel="stylesheet">
   </head>
   <body class="bg-light" id="top">
     <div id="scroll-progress" aria-hidden="true"></div>
@@ -64,6 +64,9 @@
       <button id="theme-toggle" class="fab-btn" type="button" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       <button id="back-to-top" class="fab-btn" type="button" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
     </div>
+    {% if page.math %}
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
+    {% endif %}
     <script src="{{ '/scripts/mdb.min.js' | relative_url }}?ver=1.2.1"></script>
     <script src="{{ '/scripts/aos.js' | relative_url }}?ver=1.2.1"></script>
     <script src="{{ '/scripts/main.js' | relative_url }}?ver=20260626"></script>
